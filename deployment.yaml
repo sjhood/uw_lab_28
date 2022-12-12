@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mylab27
+  name: mylab28
   labels:
     app: webnginx
 spec:
@@ -16,13 +16,13 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: hades4/lab27:1.0.0
+        image: hades4/lab28:1.0.0
         imagePullPolicy: Always 
 ---
 apiVersion: v1 
 kind: Service 
 metadata: 
-    name: mylab27 
+    name: mylab28
 spec: 
    selector: 
      app: mynginxwebpod 
